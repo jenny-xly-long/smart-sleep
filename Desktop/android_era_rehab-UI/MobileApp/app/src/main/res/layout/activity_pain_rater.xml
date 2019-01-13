@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	tools:context=".activities.PainRater">
+	
+	
+	<ImageView
+		android:id="@+id/FrontBackBody"
+		android:layout_width="370dp"
+		android:layout_height="555dp"
+		android:layout_centerInParent="true"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/body" />
+	
+	<!--<ImageButton-->
+		<!--android:id="@+id/Neck"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="268dp"-->
+		<!--android:layout_marginTop="117dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/Back"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="267dp"-->
+		<!--android:layout_marginTop="159dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/HandLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="202dp"-->
+		<!--android:layout_marginTop="279dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/LowerBack"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="270dp"-->
+		<!--android:layout_marginTop="227dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/CalfLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="248dp"-->
+		<!--android:layout_marginTop="378dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/CalfRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="289dp"-->
+		<!--android:layout_marginTop="379dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/HandRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="332dp"-->
+		<!--android:layout_marginTop="277dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/DeltLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="225dp"-->
+		<!--android:layout_marginTop="163dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/DeltRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="310dp"-->
+		<!--android:layout_marginTop="162dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/AnkleLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="52dp"-->
+		<!--android:layout_marginTop="435dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/AnkleRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="83dp"-->
+		<!--android:layout_marginTop="436dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/Core"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="68dp"-->
+		<!--android:layout_marginTop="215dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/WristLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="1dp"-->
+		<!--android:layout_marginTop="258dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/WristRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="137dp"-->
+		<!--android:layout_marginTop="260dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/FHipLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="41dp"-->
+		<!--android:layout_marginTop="264dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/FHipRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="93dp"-->
+		<!--android:layout_marginTop="264dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/FKneeLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="50dp"-->
+		<!--android:layout_marginTop="338dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/FKneeRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="87dp"-->
+		<!--android:layout_marginTop="338dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/FShoulderLeft"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="31dp"-->
+		<!--android:layout_marginTop="145dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/FShoulderRight"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="104dp"-->
+		<!--android:layout_marginTop="143dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+	<!---->
+	<!--<ImageButton-->
+		<!--android:id="@+id/Head"-->
+		<!--android:layout_width="40dp"-->
+		<!--android:layout_height="40dp"-->
+		<!--android:layout_alignParentStart="true"-->
+		<!--android:layout_alignParentTop="true"-->
+		<!--android:layout_marginStart="69dp"-->
+		<!--android:layout_marginTop="80dp"-->
+		<!--android:src="@drawable/cerclebackgroundblue" />-->
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+	android:background="@color/white">
+
+
+<EditText
+        android:id="@+id/goalETxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Goal"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ProgressBar
+        android:id="@+id/appointmentProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="181dp"
+        android:layout_height="119dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:progressTint="@color/darkBlue" />
+
+    <ProgressBar
+        android:id="@+id/sessionProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="84dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:color="@color/blue"
+        android:progressTint="@color/blue" />
+
+    <EditText
+        android:id="@+id/appointmentETxt"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bgImg"
+        android:layout_below="@+id/appointmentProgressBar"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Appointments" />
+
+    <EditText
+        android:id="@+id/sessionsETxt"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/appointmentProgressBar"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Sessions"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nextAptmtTxt"
+        android:layout_width="300dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/appointmentETxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_view"
+        android:gravity="center_horizontal"
+        android:paddingBottom="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="Next appointment:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nextAptmtETxt"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nextAptmtTxt"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <ImageView
+        android:id="@+id/bgImg"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/nextAptmtTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/card_view_1" />
+
+    <TextView
+        android:id="@+id/contactPhysioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="239dp"
+        android:background="@drawable/card_view_1"
+        android:text="Contact your physiotherapist at:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/phoneNumETxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/addressETxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumETxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-179dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/my_button_bg">
+
+        <ImageView
+            android:id="@+id/homeBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:layout_toStartOf="@+id/sessionsBarBtn"
+            android:onClick="homeBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/sessionsBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="sessionsBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/clipboard" />
+
+        <ImageView
+            android:id="@+id/viewProfileBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toEndOf="@+id/sessionsBarBtn"
+            android:onClick="viewProfileOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/avatar" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/recordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addressETxt"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/add" />
+
+
+</RelativeLayout>

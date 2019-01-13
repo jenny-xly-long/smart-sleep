@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ca.era.stride">
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher"
+		android:supportsRtl="true">
+		<meta-data
+			android:name="android.app.searchable"
+			android:value=".SearchActivity" />
+		
+		<activity
+			android:name=".activities.Welcome"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activities.SignupActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activities.PatientList"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppPage"
+			android:windowSoftInputMode="adjustNothing" />
+		<activity
+			android:name=".activities.Recording"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppPage" />
+		<activity
+			android:name=".activities.TestResult"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppPage" />
+		<activity
+			android:name=".activities.NewPatient"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppPage" />
+		<activity
+			android:name=".activities.LoginActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activities.SensorsActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activities.CreateSession"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppPage" />
+		<activity
+			android:name=".activities.AfterDelete"
+			android:label="Delete Confirmation"
+			android:screenOrientation="portrait"
+			android:theme="@style/Theme.AppCompat.Dialog" />
+		<activity
+			android:name=".activities.AfterSave"
+			android:label="Save Confirmation"
+			android:screenOrientation="portrait"
+			android:theme="@style/Theme.AppCompat.Dialog" />
+		<activity
+			android:name=".activities.CountDown"
+			android:screenOrientation="portrait"
+			android:theme="@style/Theme.AppCompat.Dialog" />
+		<activity
+			android:name=".activities.UserProfile"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activities.PatientProfile"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activities.HomePage"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		
+		<meta-data
+			android:name="com.facebook.sdk.ApplicationId"
+			android:value="@string/facebook_app_id" />
+		<meta-data
+			android:name="preloaded_fonts"
+			android:resource="@array/preloaded_fonts" />
+		
+		<activity
+			android:name="com.facebook.FacebookActivity"
+			android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+			android:label="@string/app_name" />
+		<activity
+			android:name="com.facebook.CustomTabActivity"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				
+				<data android:scheme="@string/fb_login_protocol_scheme" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activities.Questionnaire"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activities.Intro"
+			android:theme="@style/AppTheme" >
+		</activity>
+		
+		<activity
+			android:name=".activities.PainRater"
+			android:theme="@style/AppTheme" >
+		</activity>
+	</application>
+
+</manifest>

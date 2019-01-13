@@ -1,0 +1,52 @@
+namespace ca.era.stride.model;
+
+class ERA{
+  1 <@>- * User;
+  1 <@>- * Sensor;
+  1 <@>- * Patient;
+  1 <@>- * RecordingSession;
+}
+  
+class DataPoint{
+  double time;
+  Double[] value;
+  * -> 1 Sensor;
+  * -<@> 1 RecordingSession;
+}
+
+class RecordingSession{
+  unique lazy Integer sessionID;
+  Date date;
+  Time time;
+  comment;
+  phoneStatus;
+  1 <@>- * Note;
+}
+
+class Note{
+  Time startTime;
+  Time endTime;
+  comment;
+}
+
+class Sensor{
+  sensorType;
+  sensorModel;
+  int sampleRate; 
+}
+
+class Patient{
+  unique lazy Integer patientID;
+  surname;
+  name;
+  gender;
+  Date birthDate;
+  float height;  
+  float weight;
+  1 -- * RecordingSession;
+}
+
+class User{
+  username;
+  sessionToken;
+}

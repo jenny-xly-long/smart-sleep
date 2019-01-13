@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color1"
+    tools:context="ca.erarehab.datacollector.SignupActivity">
+    
+    <ImageView
+        android:id="@+id/elephant"
+        android:layout_width="351dp"
+        android:layout_height="274dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.000" />
+
+    <EditText
+        android:id="@+id/emailETxt"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/passwordETxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordETxt"
+        app:layout_constraintEnd_toEndOf="@+id/passwordETxt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordETxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/passwordETxt"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/createPasswordETxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Enter initial password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/createPasswordETxt"
+        app:layout_constraintEnd_toEndOf="@+id/createPasswordETxt"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/createPasswordETxt" />
+
+    <EditText
+        android:id="@+id/createPasswordETxt"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/confirmPasswordETxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Create your password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPasswordETxt"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPasswordETxt"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/confirmPasswordETxt" />
+
+    <EditText
+        android:id="@+id/confirmPasswordETxt"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Confirm your password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="151dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/my_button_bg"
+        android:onClick="signUp"
+        android:text="Sign up"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</RelativeLayout>

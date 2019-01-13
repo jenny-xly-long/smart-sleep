@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E2BB">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/registerPatientBtn"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/testNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="Test name here"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/patientNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/testNameTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Patient name here"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/timeResultTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patientNameTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="[TIME] 00:00"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <!--<TextView
+            android:id="@+id/resultDataTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeResultTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="[RESULT]"
+            android:textColor="#000000"
+            android:textSize="25sp" />-->
+    
+        <EditText
+            android:id="@+id/commentFieldTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeResultTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:hint="COMMENT"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/saveTrialBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentFieldTxt"
+            android:layout_above="@+id/editTrialBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/blue"
+            android:onClick="saveTrialOnClick"
+            android:text="SAVE TRIAL"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/editTrialBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/deleteTrialBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:text="EDIT TRIAL"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/deleteTrialBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="67dp"
+            android:background="#F66161"
+            android:onClick="deleteTrialOnClick"
+            android:text="DELETE TRIAL"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background= "@color/darkBlue">
+
+        <ImageView
+            android:id="@+id/logoutBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:onClick="logoutBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/exit" />
+
+        <ImageView
+            android:id="@+id/startTestBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/viewProfileBarBtn"
+            android:layout_toStartOf="@id/logoutBarBtn"
+            android:onClick="startTestBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/addPatientBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dp"
+            android:layout_toEndOf="@id/homeBarBtn"
+            android:layout_toStartOf="@id/viewProfileBarBtn"
+            android:onClick="addPatientBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/follow" />
+
+        <ImageView
+            android:id="@+id/viewProfileBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="viewProfileOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/homeBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="homeBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/home" />
+    </RelativeLayout>
+
+</RelativeLayout>

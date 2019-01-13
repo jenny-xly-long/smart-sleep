@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightestBlue">#53BEFC</color>
+    <color name="facebookBlue">#3B5998</color>
+    <color name="googleRed">#D42F27</color>
+    <color name="colorPrimary">#fd964c</color>
+    <color name="colorPrimaryDark">#53BEFC</color>
+    <color name="colorBackground">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green">#32cd32</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightBlue">#2eb0fb</color>
+    <color name="lightRose">#f45d84</color>
+    <color name="candyGreen">#5acd37</color>
+    <color name="lightPurple">#928fff</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#FD964C</color>
+    <color name="darkOrange">#FD522F</color>
+    <color name="blue">#2084ba</color>
+    <color name="darkBlue">#05151f</color>
+</resources>

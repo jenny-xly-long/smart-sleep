@@ -1,0 +1,20 @@
+<resources>
+	<string name="app_name">eRA</string>
+	<string name="open">Open</string>
+	<string name="closed">Closed</string>
+	<string name="title_activity_analysis">Analysis</string>
+	<string name="title_activity_main">MainActivity</string>
+	
+	<!-- LOGIN -->
+	<string name="facebook">MainActivity</string>
+	<string name="facebook_app_id">2222154617999730</string>
+	<string name="fb_login_protocol_scheme">fb2222154617999730</string>
+	
+	
+	<!--<string name="title_activity_menu">MenuActivity</string>-->
+	<!--&lt;!&ndash;<string-array name="array_Test">&ndash;&gt;-->
+	<!--&lt;!&ndash;<item>Gait</item>&ndash;&gt;-->
+	<!--&lt;!&ndash;<item>Balance</item>&ndash;&gt;-->
+	<!--&lt;!&ndash;<item>EMG</item>&ndash;&gt;-->
+	<!--&lt;!&ndash;</string-array>&ndash;&gt;-->
+</resources>

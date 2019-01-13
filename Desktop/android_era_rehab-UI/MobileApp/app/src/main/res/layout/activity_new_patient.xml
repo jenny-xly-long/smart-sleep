@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0E2BB">
+
+    <TextView
+        android:id="@+id/testNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="New patient"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/testNameTxt">
+
+        <EditText
+            android:id="@+id/nameETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio"
+            android:layout_centerHorizontal="true"
+            android:ems="7"
+            android:gravity="center_horizontal"
+            android:hint="NAME"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#9D9E9A"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/surnameETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameETxt"
+            android:layout_below="@+id/nameETxt"
+            android:ems="7"
+            android:gravity="center_horizontal"
+            android:hint="SURNAME"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#9D9E9A"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/bdayETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/surnameETxt"
+            android:layout_below="@+id/surnameETxt"
+            android:ems="7"
+            android:gravity="center_horizontal"
+            android:hint="BIRTHDATE (YYYY-MM-DD)"
+            android:inputType="date"
+            android:maxLength="15"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#9D9E9A"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/heightETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bdayETxt"
+            android:layout_below="@+id/bdayETxt"
+            android:layout_marginBottom="7dp"
+            android:ems="7"
+            android:gravity="center_horizontal"
+            android:hint="HEIGHT"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#9D9E9A"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/weightETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/heightETxt"
+            android:layout_below="@+id/heightETxt"
+            android:ems="7"
+            android:gravity="center_horizontal"
+            android:hint="WEIGHT"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#9D9E9A"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/registerPatientBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="67dp"
+            android:background="@color/orange"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp">
+
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="101dp"
+                android:layout_marginTop="10dp"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/femaleRadio"
+                android:layout_alignBottom="@+id/femaleRadio"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/femaleRadio"
+                android:text="Male" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background= "@color/darkBlue">
+
+            <ImageView
+                android:id="@+id/logoutBarBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:onClick="logoutBarOnClick"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/exit" />
+
+            <ImageView
+                android:id="@+id/startTestBarBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/viewProfileBarBtn"
+                android:layout_toStartOf="@id/logoutBarBtn"
+                android:onClick="startTestBarOnClick"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/addPatientBarBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="65dp"
+                android:layout_toEndOf="@id/homeBarBtn"
+                android:layout_toStartOf="@id/viewProfileBarBtn"
+                android:onClick="addPatientBarOnClick"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/follow" />
+
+            <ImageView
+                android:id="@+id/viewProfileBarBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="viewProfileOnClick"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/avatar" />
+
+            <ImageView
+                android:id="@+id/homeBarBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:onClick="homeBarOnClick"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/home" />
+        </RelativeLayout>
+
+</RelativeLayout>

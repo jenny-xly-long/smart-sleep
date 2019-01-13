@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activities.Questionnaire">
+	
+	<RelativeLayout
+	android:layout_width ="match_parent"
+		android:layout_height="wrap_content">
+		
+		<Button
+			android:id="@+id/choice1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/question"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="69.5dp"
+			android:layout_marginTop="32dp"
+			android:layout_marginEnd="69.5dp"
+			android:background="@drawable/my_button_bg"
+			android:text="choice1"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="18sp"
+			android:textStyle="bold" />
+		
+		<Button
+			android:id="@+id/choice2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/choice1"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="69.5dp"
+			android:layout_marginTop="28dp"
+			android:layout_marginEnd="69.5dp"
+			android:background="@drawable/my_button_bg"
+			android:text="choice2"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="18sp"
+			android:textStyle="bold" />
+		
+		<Button
+			android:id="@+id/choice3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/choice2"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="69.5dp"
+			android:layout_marginTop="28dp"
+			android:layout_marginEnd="69.5dp"
+			android:background="@drawable/my_button_bg"
+			android:text="choice3"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="18sp"
+			android:textStyle="bold" />
+		
+		<Button
+			android:id="@+id/choice4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/choice3"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="69.5dp"
+			android:layout_marginTop="28dp"
+			android:layout_marginEnd="69.5dp"
+			android:background="@drawable/my_button_bg"
+			android:text="choice4"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="18sp"
+			android:textStyle="bold" />
+		
+		<Button
+			android:id="@+id/choice5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/choice4"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="69.5dp"
+			android:layout_marginTop="28dp"
+			android:layout_marginEnd="69.5dp"
+			android:background="@drawable/my_button_bg"
+			android:text="choice5"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="18sp"
+			android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/question"
+			android:layout_width="wrap_content"
+			android:layout_height="132dp"
+			android:layout_below="@+id/progress"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="34dp"
+			android:layout_marginTop="78dp"
+			android:layout_marginEnd="34dp"
+			android:text="Question"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="22sp"
+			android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/progress"
+			android:layout_width="wrap_content"
+			android:layout_height="42dp"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="34dp"
+			android:layout_marginTop="26dp"
+			android:layout_marginEnd="34dp"
+			android:text="Progress"
+			android:textAlignment="center"
+			android:textColor="@color/darkBlue"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+//		android:fontFamily="@font/fanwood_text"
+</RelativeLayout>
+
+</LinearLayout>

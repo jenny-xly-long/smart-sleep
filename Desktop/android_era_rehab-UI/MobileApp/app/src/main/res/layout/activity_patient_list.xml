@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4E7C2"
+    tools:context="ca.era.stride.activities.PatientList">
+
+
+    <EditText
+        android:id="@+id/txtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="Search"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtsearch"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtsearch" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background= "@color/darkBlue">
+
+        <ImageView
+            android:id="@+id/logoutBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:onClick="logoutBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/exit" />
+
+        <ImageView
+            android:id="@+id/startTestBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/viewProfileBarBtn"
+            android:layout_toStartOf="@id/logoutBarBtn"
+            android:onClick="startTestBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/addPatientBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dp"
+            android:layout_toEndOf="@id/homeBarBtn"
+            android:layout_toStartOf="@id/viewProfileBarBtn"
+            android:onClick="addPatientBarOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/follow" />
+
+        <ImageView
+            android:id="@+id/viewProfileBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="viewProfileOnClick"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/homeBarBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/home" />
+    </RelativeLayout>
+
+</RelativeLayout>

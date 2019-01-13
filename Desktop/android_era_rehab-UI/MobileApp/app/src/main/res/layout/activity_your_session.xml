@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	tools:context=".activities.YourSession">
+	
+	
+	<TextView
+		android:id="@+id/textView3"
+		android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+		android:layout_width="126dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_marginStart="128dp"
+		android:layout_marginTop="19dp"
+		android:layout_marginEnd="130dp"
+		android:text="Your Sessions"
+		android:textAlignment="center"
+		android:textColor="@color/darkBlue"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+	
+	<LinearLayout
+		android:layout_width="304dp"
+		android:layout_height="469dp"
+		android:layout_alignStart="@+id/textView3"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="-88dp"
+		android:layout_marginTop="52dp"
+		android:orientation="vertical">
+		
+		<EditText
+			android:id="@+id/editText10"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session Today"
+			android:clickable="true"
+			/>
+		
+		<TextView
+			android:id="@+id/expandedView"
+			 android:text="Exercise"/>
+		
+		<EditText
+			android:id="@+id/editText8"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDate" />
+		
+		<EditText
+			android:id="@+id/editText9"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDate" />
+		
+		<EditText
+			android:id="@+id/editText11"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDat" />
+		
+		<EditText
+			android:id="@+id/editText12"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDate" />
+		
+		<EditText
+			android:id="@+id/editText13"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDate" />
+		
+		<EditText
+			android:id="@+id/editText14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDate" />
+		
+		<EditText
+			android:id="@+id/editText15"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Session InputDate" />
+		
+		<EditText
+			android:id="@+id/editText16"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:text="Seesion InputDate" />
+	
+	</LinearLayout>
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginStart="0dp"
+		android:layout_marginBottom="0dp"
+		android:background="@drawable/my_button_bg">
+		
+		<ImageView
+			android:id="@+id/homeBarBtn"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_marginRight="50dp"
+			android:layout_toStartOf="@+id/sessionsBarBtn"
+			android:onClick="homeBarOnClick"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/home" />
+		
+		<ImageView
+			android:id="@+id/sessionsBarBtn"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:onClick="sessionsBarOnClick"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/clipboard" />
+		
+		<ImageView
+			android:id="@+id/viewProfileBarBtn"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="50dp"
+			android:layout_toEndOf="@+id/sessionsBarBtn"
+			android:onClick="viewProfileOnClick"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/avatar" />
+	
+	</RelativeLayout>
+
+</RelativeLayout>
